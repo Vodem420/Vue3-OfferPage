@@ -1,0 +1,46 @@
+.timer {
+  position: relative;
+  @include flex(flex, center, center);
+  width: 16rem;
+  height: 6rem;
+  border-radius: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  color: var(--White);
+  z-index: 1;
+  overflow: hidden;
+  @include media(p-phone) {
+    width: 11rem;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    z-index: -1;
+  }
+  &::before {
+    background-color: var(--BgBlack);
+  }
+  &__persentWidth {
+    position: absolute;
+    left: 0;
+    display: block;
+    height: inherit;
+    border-radius: inherit;
+    background-color: var(--BgGreen);
+    transition: 0.4s;
+    z-index: -1;
+  }
+  &.active {
+    &::after {
+      transition: 1s;
+      border: 2px solid var(--Warning);
+      animation: 3s linear 1s infinite pulse;
+    }
+  }
+}

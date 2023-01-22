@@ -15,7 +15,7 @@ export default defineConfig({
     presetWebFonts({
       provider: "google",
       fonts: {
-        pacifico: "Pacifico",
+        ProximaNova: "Montserrat",
       },
     }),
   ],

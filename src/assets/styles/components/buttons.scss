@@ -1,0 +1,64 @@
+.btn {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 5.6rem;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+  color: var(--White);
+  border-radius: 1.2rem;
+  &__main {
+    background-color: var(--Black);
+  }
+  &__active {
+    background-color: var(--BtnActive);
+  }
+  &__disabled {
+    background-color: var(--BtnDisabled);
+  }
+  &__payPal {
+    color: var(--Black);
+    background-color: var(--BtnYellow);
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 5rem;
+      height: 1.3rem;
+      margin-right: 1rem;
+      vertical-align: middle;
+      background-image: url(/images/icons/payPal.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &:hover {
+      background-color: var(--BtnYellowHover);
+      transition: 0.4s ease;
+    }
+  }
+  &__googlePay {
+    color: var(--Black);
+    background-color: var(--BtnWhite);
+    border: 1px solid var(--BorderLight);
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 2.3rem;
+      height: 2.4rem;
+      margin-right: 1rem;
+      vertical-align: text-bottom;
+      background-image: url(/images/icons/google.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &:hover {
+      color: var(--White);
+      background-color: var(--BtnWhiteHover);
+      transition: 0.4s ease;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+:root {
+  /*Content Space*/
+  --HeaderH: 5.6rem;
+  --ContentWidth: 97.1rem;
+  --ContentWidthResponsive: 96%;
+
+  /*Colors*/
+  --White: #fff;
+  --Black: #000;
+  --Orange: #ff8d24;
+  --Green: #01c120;
+  --Warning: #ff0000;
+  --Disabled: rgba(0, 0, 0, 0.4);
+  --Label: #121826;
+
+  /*Button Colors*/
+  --BtnMain: #000;
+  --BtnActive: #00ca14;
+  --BtnDisabled: #d2d2d2;
+  --BtnYellow: #fec538;
+  --BtnYellowHover: #ffda80;
+  --BtnWhite: #fff;
+  --BtnWhiteHover: #000;
+
+  /* Border Colors */
+  --BorderMain: rgba(0, 0, 0, 0.2);
+  --BorderSecondary: #cdcdcd;
+  --BorderLight: #e1e1e1;
+
+  /*BG Colors*/
+  --BgWhite: #fff;
+  --BgBlack: #000;
+  --BgGreen: #00ca14;
+
+  /*Bg Modal*/
+  --ModalBgWhite: #fff;
+  --ModalBackdrop: rgba(0, 0, 0, 0.2);
+
+  /*Box Shadow*/
+  --BshMain: rgba(0, 0, 0, 0.06);
+  --BshModal: rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: var(--HeaderH);
+  @include flex(flex, center);
+  @include media(p-phone) {
+    background: var(--BgWhite);
+  }
+  z-index: 2;
+  &__content {
+    width: 100%;
+    max-width: 116.2rem;
+    margin: 0 auto;
+    @include media(desktop) {
+      max-width: 96%;
+    }
+  }
+  img {
+    width: 17.9rem;
+    height: 4rem;
+  }
+  &__fix {
+    height: var(--HeaderH);
+  }
+}

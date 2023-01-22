@@ -8,7 +8,7 @@ import "uno.css";
 import "@unocss/reset/sanitize/sanitize.css";
 import "@unocss/reset/sanitize/forms.css";
 import "@unocss/reset/sanitize/typography.css";
-import "./assets/main.css";
+import "./assets/styles/core.scss";
 
 const app = createApp(App);
 

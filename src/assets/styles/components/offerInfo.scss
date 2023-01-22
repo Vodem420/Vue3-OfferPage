@@ -1,0 +1,120 @@
+.offerInfo {
+  position: relative;
+  @include media(reverso-phone) {
+    padding: 2.4rem;
+    border: 1px solid var(--BorderSecondary);
+    border-radius: 2.4rem;
+    background: var(--BgWhite);
+    box-shadow: 0px 4px 4px var(--BshMain);
+  }
+  &__asteroid {
+    position: absolute;
+    right: 2rem;
+    top: -5.7rem;
+    width: 20rem;
+    height: 8rem;
+    object-fit: contain;
+    @include media(tablet) {
+      display: none;
+    }
+  }
+  &__head {
+    @include flex(flex, center, space-between);
+    @include media(phone) {
+      max-width: var(--ContentWidthResponsive);
+      margin: 3.6rem auto 0;
+      padding: 1.2rem 1.6rem;
+      border: 1px solid var(--BorderSecondary);
+      border-radius: 2.4rem;
+      background: var(--BgWhite);
+      box-shadow: 0px 4px 4px var(--BshMain);
+      &__left.active {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    span {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.2rem;
+      color: var(--Black);
+      text-decoration: line-through;
+      opacity: 0.4;
+    }
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 2.9rem;
+      color: var(--Black);
+      padding-bottom: 0.8rem;
+      b {
+        color: var(--Orange);
+      }
+    }
+    p {
+      padding-bottom: 0.2rem;
+      &:first-child {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        color: var(--Black);
+        @include media(phone) {
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  &__list {
+    margin: 2.6rem 0;
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+      object-fit: contain;
+      margin-right: 1rem;
+    }
+  }
+  &__item {
+    @include flex(flex, center);
+    &:not(:last-child) {
+      padding-bottom: 2.1rem;
+    }
+    span {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: var(--Black);
+    }
+    b {
+      font-weight: bold;
+      color: var(--Orange);
+    }
+  }
+  button {
+    @include flex(flex, center, center);
+    border: 1px solid var(--BorderMain);
+    margin-bottom: 2.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    color: var(--Green);
+    background: #ffffff;
+    img {
+      width: 1.56rem;
+      height: 2.4rem;
+      margin-right: 1.22rem;
+      object-fit: contain;
+    }
+  }
+  &__description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-align: center;
+    color: var(--Black);
+    opacity: 0.5;
+    @include media(p-phone) {
+      padding-bottom: 5rem;
+    }
+  }
+}
